@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns:fx="http://javafx.com/fxml" fx:controller="edu.virginia.cs.gui.reviewGUICon"
+      prefWidth="800" prefHeight="600">
+    <Group layoutX="200" layoutY="150">
+        <VBox alignment="CENTER" spacing="20" style="-fx-alignment: center;">
+            <HBox style="-fx-alignment: CENTER_RIGHT;">
+                <Button text="Log Out" onAction="#LogoutFromMenu" style="-fx-font-size: 12pt;"/>
+            </HBox>
+            <VBox alignment="CENTER" spacing="20" style="-fx-alignment: center;">
+                <Label text="Main Menu" style="-fx-font-size: 20pt;"/>
+                <HBox alignment="CENTER" spacing="20" style="-fx-alignment: center;">
+                    <Button text="Submit a Review" onAction="#writingReview" style="-fx-font-size: 16pt; -fx-pref-width: 200;"/>
+                    <Button text="See Review for Course" onAction="#selectWhichCourse" style="-fx-font-size: 12pt; -fx-pref-width: 200;"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </Group>
+</Pane>

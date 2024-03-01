@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.StackPane?>
+
+<Group xmlns:fx="http://javafx.com/fxml" fx:controller="edu.virginia.cs.gui.reviewGUICon">
+    <VBox alignment="CENTER" spacing="20" style="-fx-alignment: center;">
+        <Label text="Login" style="-fx-font-size: 20pt;"/>
+        <GridPane>
+            <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-font-size: 16pt;"/>
+            <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-font-size: 16pt;"/>
+            <TextField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Label fx:id="tryAgain" text="Please Try Again." GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-font-size: 10pt;" visible="false"/>
+        </GridPane>
+        <Button text="Login" onAction="#handleLoginButtonAction"/>
+        <Button text="Create Account" onAction="#handleCreateAccountButtonAction"/>
+    </VBox>
+</Group>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="edu.virginia.cs.gui.reviewGUICon"
+            prefHeight="400.0" prefWidth="600.0">
+    <HBox spacing="10" layoutX="50" layoutY="50">
+        <VBox spacing="10">
+            <Label text="Course Department" />
+            <TextField fx:id="departmentFieldFirst" />
+        </VBox>
+        <VBox spacing="10">
+            <Label text="Course Catalog Number" />
+            <TextField fx:id="catalogNumFieldFirst" />
+        </VBox>
+    </HBox>
+    <Button text="Submit" onAction="#submitCourseSelection" layoutX="250" layoutY="100" />
+</StackPane>
